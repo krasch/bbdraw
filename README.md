@@ -2,7 +2,7 @@
 
 ### Library for drawing labeled bounding boxes / bounding polygons
 
-![Example image showing labeled bounding boxes and bounding polygons](example.jpg "Example containing bounding boxes and bounding polygons")
+![Example image showing labeled bounding boxes and bounding polygons](https://raw.githubusercontent.com/krasch/bbdraw/master/example.jpg "Example containing bounding boxes and bounding polygons")
 
 Basically, a small wrapper around the python pillow library that combines drawing
 boxes and writing labels into one simple function call:
