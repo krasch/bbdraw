@@ -5,7 +5,7 @@ long_description = pypandoc.convert('README.md', 'rst')
 
 setup(
     name='bbdraw',
-    version='0.0.5',
+    version='0.0.1-alpha',
     packages=['bbdraw'],
     url='https://github.com/krasch/bbdraw',
     license='MIT',
