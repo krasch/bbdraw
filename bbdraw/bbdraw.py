@@ -11,16 +11,16 @@ def _get_line_width(image: Image.Image):
     min_side = min(image.width, image.height)
 
     if min_side < 200:
-        return 1
-
-    elif min_side < 400:
         return 2
 
-    elif min_side < 800:
+    elif min_side < 400:
         return 3
 
-    else:
+    elif min_side < 800:
         return 4
+
+    else:
+        return 5
 
 
 def _draw(image: Image.Image,
@@ -33,7 +33,7 @@ def _draw(image: Image.Image,
         image = image.copy()
 
     line_width = _get_line_width(image)
-    font_size = line_width * 10
+    font_size = line_width * 8
 
     draw = ImageDraw.Draw(image)
     draw.line(polygon.vertices + polygon.vertices[0:1], fill=color, width=line_width)
