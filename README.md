@@ -1,8 +1,16 @@
-# bbdraw - Library for drawing labeled bounding boxes / bounding polygons
+# bbdraw 
 
-Useful, for example, for showcasing object detection results:
+### Library for drawing labeled bounding boxes / bounding polygons
 
 ![Example image showing labeled bounding boxes and bounding polygons](example.jpg "Example containing bounding boxes and bounding polygons")
+
+Basically, a small wrapper around the python pillow library that combines drawing
+boxes and writing labels into one simple function call:
+
+```
+corners = [(650, 290), (715, 335)]
+image = bbdraw.rectangle(image, corners, text="cactus", color="red")
+```
 
 # Installation
 
